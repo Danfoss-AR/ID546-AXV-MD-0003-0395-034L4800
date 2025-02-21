@@ -27,27 +27,19 @@
 <body>
   <div id="card">
     <!-- All you need to put beautiful, interactive 3D content on your site: -->
-    <!-- <model-viewer src="Model/assy_as-cx06-dy_xp05p_ps20_xp05p_ext.glb"
-                  ios-src="Model/assy_as-cx06-dy_xp05p_ps20_xp05p_ext.usdz"
+    <model-viewer src="Model/ID546 AXV MD-0003-0395-034L4800_v1.glb"
+                  ios-src="Model/ID546 AXV MD-0003-0395-034L4800_v1.usdz"
                   alt=""
                   shadow-intensity="0"
-				  id="viewer-singleton"
+				 
                   camera-controls
-				  camera-orbit="220deg 70deg 20m"
+				  camera-orbit="220deg 70deg 120m"
 				  safari chrome
                    ar
 				   ar-scale=""
 				   exposure="1"
 				  poster="Images/Poster.png">
-    </model-viewer> -->
-    <model-viewer ar camera-controls touch-action="pan-y" auto-rotate src="Model/ID546 AXV MD-0003-0395-034L4800_v1.glb"   ios-src="Model/ID546 AXV MD-0003-0395-034L4800_v1.usdz" alt="A 3D model of an astronaut">
-      <button slot="ar-button" style="background-color: rgb(253, 242, 242); border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
-          👋 Activate AR
-      </button>
     </model-viewer>
-
-   
-
     <section class="attribution">
       <h1> ID546 AXV MD-0003-0395-034L4800 </h1>
         </div>
@@ -62,18 +54,6 @@
   <script nomodule
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
   </script>
-  
-  <script>
-        (() => {
-          var checkExist = setInterval(function() {
-           if (document.querySelector("#viewer-singleton") != null) {
-              modelViewer = document.querySelector("#viewer-singleton");
-              modelViewer.activateAR();
-              clearInterval(checkExist);
-           }
-        }, 100);
-        })();
-    </script>
   
   
 
